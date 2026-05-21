@@ -1,40 +1,16 @@
 :root{
     --color1:#FF9FC5;
-    --color2:#D9D9D9;
+    --color2:#fff;
     --color3:#96305A;
     --color4:#602540;
     --color5:#e27bb1;
     --colorLinear:linear-gradient(purple,aqua);
-    --fontFamily:"Cascadia Code",sans-serif;
+    --fontFamily:"franklin gothic",sans-serif;
 }
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-body{
-    background:var(--color1);
-    font-family:var(--fontFamily);
-}
-.card {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-.card img{
-    display:flex;
-    width:20%;
-    height:20%;
-}
-.card-content{
-    padding:15px;
-    text-align:justify;
-    gap: 20px;
-    color:var(--text-color);
-    font-weight:700;
 }
 header{
     background:var(--color3);
@@ -61,7 +37,50 @@ header nav ul li a{
     font-weight:800;
 }
 header nav ul li a:hover{
-    color:var(--color4);
+    color:var(--color2);
+    text-transform:uppercase;
+}
+body{
+    background:var(--color2);
+    font-family:var(--fontFamily);
+}
+.card {
+    display:flex;
+    align-items:center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card img{
+    display:flex;
+    width:20%;
+    height:20%;
+}
+.card-content{
+    background:var(--color5);
+    border-radius: 15px;
+    padding:15px;
+    text-align:justify;
+    gap: 20px;
+    color:var(--text-color);
+    font-weight:700;
+}
+.card-content:hover{
+    transform:scale(1.03);
+    cursor:pointer;
+}
+.card-content-alt {
+    background:var(--color4);
+    border-radius: 15px;
+    padding:15px;
+    text-align:justify;
+    gap: 20px;
+    color:var(--color2);
+    font-weight:700;
+}
+.card-content-alt:hover{
+    transform:scale(1.03);
+    cursor:pointer;
 }
 .cor{
     width:30px;
@@ -77,4 +96,30 @@ header nav ul li a:hover{
     background:var(--colorLinear);
     -webkit-text-fill-color:transparent;
     background-clip:text;
+}
+footer {
+    padding: 30px 10px;
+    background:var(--color3);
+    color:var(--color2);
+}
+footer div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+footer div img {
+    filter:invert(100%);
+    margin:10px;
+    width:50px;
+    height:auto;
+}
+.icone-insta{
+    width:auto;
+    height:63px;
+}
+footer div img:hover {
+    transform:scale(1.2);
+}
+footer p {
+    font-weight:bold;
 }
